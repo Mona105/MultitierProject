@@ -1,0 +1,17 @@
+﻿@model IEnumerable<CommonLayer.Models.Students>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <ul>
+        @foreach (var stu in Model)
+        {
+            <li>@stu.Name</li>
+            <li>@stu.Email</li>
+            <li>@stu.Gender</li>
+            <li>@stu.Mobile</li>
+        }
+    </ul>
+</div>
